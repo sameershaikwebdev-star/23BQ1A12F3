@@ -39,30 +39,50 @@ A Next.js-based frontend application that consumes notification APIs, displays n
 # Project Structure
 
 ```text
-campus-notifications/
+# Project Structure
+
+```text
+23BQ1A12F3
 │
-├── app/
-│   ├── api/
-│   │   └── notifications/
-│   │       └── route.ts
-│   │
-│   ├── components/
-│   │   ├── FilterBar.tsx
-│   │   ├── NotificationCard.tsx
-│   │   └── NotificationsClient.tsx
-│   │
-│   ├── lib/
-│   │   └── notifications.ts
-│   │
-│   ├── utils/
-│   │   └── logger.ts
-│   │
-│   ├── page.tsx
-│   └── layout.tsx
+├── stage1
+│   ├── priority_inbox.py
+│   └── Notification_System_Design.md
 │
-├── priority_inbox.py
-├── Notification_System_Design.md
-└── README.md
+└── stage2
+    ├── app
+    │   ├── api
+    │   │   └── notifications
+    │   │       └── route.ts
+    │   ├── components
+    │   │   ├── FilterBar.tsx
+    │   │   ├── NotificationCard.tsx
+    │   │   ├── NotificationsClient.tsx
+    │   │   └── ThemeRegistry.tsx
+    │   ├── lib
+    │   │   └── notifications.ts
+    │   ├── utils
+    │   │   └── logger.ts
+    │   ├── favicon.ico
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   ├── page.module.css
+    │   └── page.tsx
+    │
+    ├── public
+    │   ├── file.svg
+    │   ├── globe.svg
+    │   ├── next.svg
+    │   ├── vercel.svg
+    │   └── window.svg
+    │
+    ├── .gitignore
+    ├── eslint.config.mjs
+    ├── next-env.d.ts
+    ├── next.config.ts
+    ├── package-lock.json
+    ├── package.json
+    └── tsconfig.json
+    └── README.md
 ```
 
 ---
