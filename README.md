@@ -40,8 +40,6 @@ A Next.js-based frontend application that consumes notification APIs, displays n
 
 ```text
 # Project Structure
-
-```text
 23BQ1A12F3
 │
 ├── stage1
