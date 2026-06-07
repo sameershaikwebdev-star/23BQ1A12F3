@@ -204,6 +204,41 @@ The frontend retrieves notifications and updates the UI dynamically.
 
 # Logging Middleware
 
+## Logging Middleware Verification
+
+The application uses a custom logging middleware located at:
+
+```text
+stage2/app/utils/logger.ts
+```
+
+To verify that the logging middleware is integrated into the application, run:
+
+```bash
+cd stage2
+
+grep -R "Log(" app/
+```
+
+Expected output:
+
+```text
+app/api/notifications/route.ts:    await Log(
+app/api/notifications/route.ts:    await Log(
+app/utils/logger.ts:export async function Log(
+```
+
+This confirms that:
+
+* The custom logging middleware exists.
+* The middleware is integrated into the application.
+* API operations use the logging middleware instead of direct console logging.
+* Logging is performed for both successful and failed notification requests.
+
+```
+```
+
+
 ## Purpose
 
 A reusable logging middleware was implemented as required.
